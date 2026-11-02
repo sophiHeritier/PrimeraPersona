@@ -68,6 +68,8 @@ namespace StarterAssets
 			GameObject newProjectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, transform.rotation);
 
             newProjectile.GetComponent<Rigidbody>().AddForce(projectileSpawnPoint.up * projectileForce, ForceMode.Impulse);
+
+			Destroy(newProjectile, 5f); 
         }
 
         public void MoveInput(Vector2 newMoveDirection)
