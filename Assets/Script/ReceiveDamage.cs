@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class ReceiveDamage : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int health = 100;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
@@ -21,7 +22,14 @@ public class ReceiveDamage : MonoBehaviour
             Debug.Log("Received damage from projectile!");
            
             Destroy(collision.gameObject);
+
+            health -= 10; 
+
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
-
+    
 }
