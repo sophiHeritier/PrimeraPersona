@@ -13,14 +13,18 @@ public class EnemyNavigation : MonoBehaviour
 
         target = GameObject.FindGameObjectWithTag("Player").transform;
 
-        agent.destination = target.position;
+       
     }
 
    
     void Update()
     {
-        
+        InvokeRepeating("UpdateTarget", 3f, 2f);
     }
 
-    
+    private void UpdateTarget()
+    {
+        agent.destination = target.position;
+    }
+
 }
