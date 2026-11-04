@@ -5,6 +5,9 @@ using TMPro;
 public class ReceiveDamage : MonoBehaviour
 {
     public TextMeshProUGUI healthText;
+
+    public Image healthBar;
+
     public int health = 100;
 
     void Start()
@@ -26,8 +29,9 @@ public class ReceiveDamage : MonoBehaviour
            
             Destroy(collision.gameObject);
 
-            health -= 20; 
+            health -= 25; 
             healthText.text = health.ToString();
+            healthBar.fillAmount = health / 100f;
 
             if (health <= 0)
             {
