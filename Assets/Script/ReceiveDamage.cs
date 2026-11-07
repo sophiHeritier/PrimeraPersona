@@ -10,9 +10,11 @@ public class ReceiveDamage : MonoBehaviour
 
     public int health = 100;
 
+    public EnemyNavigation enemyNavigation;
+
     void Start()
     {
-        
+        enemyNavigation = GetComponent<EnemyNavigation>();
     }
 
 
@@ -35,7 +37,8 @@ public class ReceiveDamage : MonoBehaviour
 
             if (health <= 0)
             {
-                Destroy(gameObject);
+                Debug.Log("Enemy has died!");
+                enemyNavigation.Die();
             }
         }
     }
