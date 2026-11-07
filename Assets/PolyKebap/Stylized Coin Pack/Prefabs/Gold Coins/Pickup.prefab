@@ -70,10 +70,59 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fed97c52d9f00fb47a39b9a96ffe482b, type: 2}
     - target: {fileID: 919132149155446097, guid: 1f9239d832cd0714a88ba940268d52fc, type: 3}
       propertyPath: m_Name
-      value: Coin_Gold_Crown
+      value: Pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f9239d832cd0714a88ba940268d52fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5806212751593191203}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f9239d832cd0714a88ba940268d52fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 180623076601063374}
   m_SourcePrefab: {fileID: 100100000, guid: 1f9239d832cd0714a88ba940268d52fc, type: 3}
+--- !u!1 &1126470237653282223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1f9239d832cd0714a88ba940268d52fc, type: 3}
+  m_PrefabInstance: {fileID: 244161295552778494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5806212751593191203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126470237653282223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.40000004, y: 0.40000007, z: 0.0201926}
+  m_Center: {x: 0.00000043958426, y: 0.00835228, z: -0.0030325067}
+--- !u!114 &180623076601063374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126470237653282223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32ef7ce967a4f54a9b813b6be4f0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
+  rotationSpeed: 180
+  rotationAxis: {x: 0, y: 1, z: 0}
+  relativeTo: 1
+  bobSpeed: 2
+  bobHeight: 0.5
