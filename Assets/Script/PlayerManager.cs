@@ -20,7 +20,6 @@ public class PlayerManager : MonoBehaviour
         UpdateUI();
     }
 
-    // Recibir daño (por ejemplo, cuando el enemigo choca o ataca al jugador)
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -34,13 +33,13 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    // Recoger monedas
+   
     public void AddCoins(int amount)
     {
         coins += amount;
         UpdateUI();
 
-        // Opcional: Condición de victoria por acumular cierta cantidad de monedas (ej. 5 monedas)
+     
         if (coins >= 5)
         {
             GameManager.Instance.TriggerVictory();
