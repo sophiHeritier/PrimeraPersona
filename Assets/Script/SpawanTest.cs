@@ -10,7 +10,6 @@ public class SpawanTest : MonoBehaviour
         Instantiate(objectToSpawn, spawnPostion, transform.rotation);
     }
 
-    // Update is called once per frame
     void Update()
     {
         

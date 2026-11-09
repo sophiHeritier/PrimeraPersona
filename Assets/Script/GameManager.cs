@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Time.timeScale = 0f; // Pausa el juego
+        Time.timeScale = 0f; 
     }
 
     public void TriggerDefeat()
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Time.timeScale = 0f; // Pausa el juego
+        Time.timeScale = 0f; 
     }
 
     // Métodos para los botones del menú

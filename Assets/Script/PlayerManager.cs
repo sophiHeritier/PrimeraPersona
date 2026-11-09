@@ -54,19 +54,11 @@ public class PlayerManager : MonoBehaviour
         if (coinsText != null) coinsText.text = coins.ToString();
     }
 
-    // Detectar si el enemigo colisiona con el jugador para hacerle daño
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Enemy"))
-    //    {
-    //        TakeDamage(10); // Daño que recibe el jugador al tocar al enemigo
-    //    }
-    //}
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(10); // Daño que recibe el jugador
+            TakeDamage(10); 
         }
     }
 }
