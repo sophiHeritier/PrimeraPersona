@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   healthText: {fileID: 0}
   healthBar: {fileID: 0}
   coins: 0
@@ -511,5 +511,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 48
   m_CollisionDetection: 0
