@@ -135,6 +135,7 @@ MonoBehaviour:
   healthText: {fileID: 9176488560184642013}
   healthBar: {fileID: 58592719911247323}
   health: 100
+  enemyNavigation: {fileID: 0}
 --- !u!195 &9190851782744609746
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -171,6 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyNavigation
   agent: {fileID: 0}
   target: {fileID: 0}
+  enemyAnimator: {fileID: 0}
+  isDead: 0
 --- !u!1 &3622647900615092281
 GameObject:
   m_ObjectHideFlags: 0
